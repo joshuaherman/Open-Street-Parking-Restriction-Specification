@@ -14,11 +14,11 @@ All Rules are singular. Meaning one day, week, or month per rule
 |**permit**| string|  commercial, residential, disability, none| type of permit and permit number or value |prop: 'value', null|
 |**effective**||||
 |**length**||||
-|**days**|string| "0000000" | days rule is active | 0 = not active, 1 = active, First bit is Monday |
-|**weeks**|string| "0000" | weeks rule is active | 0 = not active, 1 = active, First bit is first week |
-|**months**| string | "000000000000" | months rule is active | 0=not active, 1 = active, First bit is January |
-|**start**| string |00:00:00 -> 23:59:59| time of rule start| |
-|**end**| string |00:00:00 -> 23:59:59| time of rule end| |	
+|**days**|number| "0000000" | days rule is active | 0 = not active, 1 = active, First bit is Monday |
+|**weeks**|number| "0000" | weeks rule is active | 0 = not active, 1 = active, First bit is first week |
+|**months**| number | "000000000000" | months rule is active | 0=not active, 1 = active, First bit is January |
+|**start**| number |0 -> 1440| time in minutes for rule start| |
+|**end**| number |0 -> 1440| time in mintues for rule end| |	
 |**location**|array |geojson |geojson data structure | "type": "Feature", "geometry" "type": "LineString", "coordinates": [[102.0, 0.0], [103.0, 1.0], [104.0, 0.0], [105.0, 1.0]]}|
 
 |Metadata| | |
